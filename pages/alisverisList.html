@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<title> Alışveriş Listesi</title>
+
+    <link rel="stylesheet" type="text/css" href="stilim.css"/>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+
+	
+
+<div class="kutu">
+    <div class="slider"><p> Odev2</p></div>
+
+    <div class="govde">
+        <div class="govdesol">
+            <div class="govdesolbaslik"><p>MENU</p></div>
+            <div class="govdesolicerik">
+                <ul class="menumuz">         
+					<li class="solmenu"><a href="Odev2.html">Geri Dön</a></li>
+                    
+                </ul>
+
+            </div>
+        </div>
+        <div class="govdesag">
+		    
+	<p><font face="tahoma" size="5" color="White">
+	<h2>ALIŞVERİŞ LİSTESİ</h2>
+    <H3>Alınacaklar</H3>
+    <input type="text" id="txtEleman" placeholder="İsim Girin...">
+    <button id="btn1">EKLE</button>
+    <button id="btn2">SİL</button>
+    <ul id="liste"></ul>
+        <div id="panel">
+            
+        </div>
+ 
+    <script>
+        
+        var btn1=document.querySelector("#btn1");
+        var btn2=document.querySelector("#btn2");
+        var panel=document.querySelector("#panel");
+        var ad=document.querySelector("#txtEleman");
+        
+        btn1.onclick=function(){
+            
+            var div= document.createElement("div");
+            div.classList="kutu";
+            div.innerText=ad.value;
+            panel.appendChild(div);
+        }
+        btn2.onlick=function(){
+            var div = document.getElement("div");
+            panel.removeChild(div);
+
+}
+           
+    </script>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+
+    </body>
+</html>
+
