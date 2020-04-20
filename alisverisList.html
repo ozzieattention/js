@@ -47,14 +47,13 @@
         btn1.onclick=function(){
             
             var div= document.createElement("div");
-            
+            div.classList="kutu";
             div.innerText=ad.value;
             panel.appendChild(div);
         }
         btn2.onlick=function(){
             var div = document.getElement("div");
-			
-			div.remove();
+            panel.removeChild(div);
 
 }
            
