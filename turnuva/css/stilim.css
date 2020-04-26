@@ -1,0 +1,160 @@
+p{
+	color:white;
+	
+}
+
+body{
+	background-image:url(../../images/indexbackground.jpg);
+	
+  
+}
+	
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+gölge{
+font-family: "Arial Black", Gadget, sans-serif;
+text-shadow: 2px 2px 25px blue;}
+img.uc{
+	vertical-align:text-top;
+	}
+.altfooter {
+	font-size:19px;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-shadow: 2px 2px 25px red;
+	color: white;
+	position:absolute;
+	width:75%;
+    height:70px;   /* footer yüksekliği */
+    background:#0e0c28;
+    line-height:15px;
+	margin-top: 520px;
+	
+	margin-left: 270px;
+	
+}
+
+.slider{
+background-image:url(../../images/background.gif);
+height: 300px;	
+width: 100%;
+text-align:center;
+
+}
+
+.menu{
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-top: 5px;
+}
+.govde{
+	width: 1000px;
+	height: 600px;
+	float: left;
+	margin-top: 20px;
+	
+}
+.govdesol{
+		width: 270px;
+		height: 500px;
+		float: left;	
+		}
+		
+.govdesolbaslik{
+	width: 100%;
+	height: 40px;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: white;
+	text-decoration: underline solid rgb(68, 68, 68);
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: none;
+	background-color: #0e0c28;
+	
+}
+.govdesolicerik{
+	width: 100%;
+	height: 700px;
+	float: left;
+	
+}
+.govdesag{
+    width: 700px;
+    height: 550px;
+    float: right;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.spa{
+	
+	padding-left:100px;
+	font-family: 'Century Gothic';
+	font-size: 18px;
+	background-color: #0e0c28;
+}
+.slider p{
+	
+	font-size: 90px;
+	padding-top:50px;
+	text-align:center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: white;
+	text-decoration: none solid rgb(68, 68, 68);
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: none;
+}
+
+ul.menumuz {
+	list-style-type: none;
+    padding: 10px;
+    font-family: calibri;
+    font-size: 16px;
+    font-weight: bold;	
+}
+ul li{
+	background: #ff6600;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #0e0c28;
+}
+ul li:hover{
+	background:#994c00;
+	cursor: pointer;
+}
+
+h1{
+	font-size:180%;
+	font-weight:normal;
+	color:#555;
+}
+h2{
+	clear:both;
+	font-size:160%;
+	font-weight:normal;
+	color:#555;
+	margin:0;
+	padding:.5em 0;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+p{
+	clear:both;
+	margin:0;
+	padding:.5em 0;
+}
