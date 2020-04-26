@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  <title>Hafıza Oyunu</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Matching Game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/oyun.css">
+  <link rel="icon" href="img/memory-game-logo.jpg">
+  <link rel="stylesheet" type="text/css" href="../css/stilim.css"/>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ryanwaite28.github.io/script-store/js/stop-watch.js"></script>
+  <script src="../js/app.js"></script>
+</head>
+
+<body>
+<div class="kutu">
+    <div class="slider"><p> Hafıza Oyunu</p></div>
+<div class="kutu">
+    
+
+    <div class="govde">
+        <div class="govdesol">
+            <div class="govdesolbaslik"><p>MENU</p></div>
+            <div class="govdesolicerik">
+                <ul class="menumuz">         
+					<li class="solmenu"><a href="../index.html">Geri Dön</a></li>
+                    
+                </ul>
+
+            </div>
+        </div>
+        <div class="govdesag">
+
+  <div class="middle-box">
+   
+
+    <section class="score-panel">
+      <ul id="stars-list" class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+      <span id="grade" class="moves"></span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="moves-text"></span></strong> Hamle
+      </span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="time-text"></span></strong>
+      </span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="msg-text"></span></strong>
+      </span>
+
+      <div id="info-btn" class="hint">
+        <span><i class="fa fa-info"></i> Bilgi</span>
+      </div>
+      <div id="reset-btn" class="restart">
+        <span><i class="fa fa-repeat"></i> Yenile</span>
+      </div>
+    </section>
+
+    <ul id="deck" class="deck" ></ul>
+  </div>
+
+  <!--  -->
+
+  <div id="game_modal" class="modal">
+    <div class="modal-content">
+      <h4>Tebrikler!</h4>
+      <h5>Skorun</h5>
+
+      <p><strong>Süre:</strong> <span id="time_results"></span></p>
+      <p><strong>Hamle:</strong> <span id="moves_results"></span></p>
+      <p><strong>Derece:</strong> <span id="grade_results"></span></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Kapat</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal_reset_btn">Yeniden Oyna</a>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
