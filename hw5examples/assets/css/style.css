@@ -1,0 +1,392 @@
+/* BASIC STYLES */
+
+html {
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    color: #000000;
+    font-family: 'Cutive', serif;
+    background: url(../images/paper.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-family: 'helvetica', sans-serif;
+    font-size: 3rem!important;
+}
+
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+
+
+/* HEADER */
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+header {
+    max-height: 100%;
+    height: auto;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+header img {
+    float: right;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.smaller {
+    font-size: 2.5rem!important;
+}
+
+
+
+/* WRAPPER */
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
+
+
+/* MAIN */
+
+main {
+    display: none;
+    margin-bottom: auto;
+    position: relative;
+    animation: fadeIn 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+
+/* MIDDLE */
+
+.middle {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+img.splash {
+    max-width: 200px;
+    width: 100%;
+}
+
+img.splash:hover {
+    transform: rotate(7deg);
+    cursor: pointer;
+}
+
+h2#timer {
+    font-size: 1.3rem;
+}
+
+#current-question h2 {
+    display: inline-block;
+    text-align: left;
+}
+
+#right-wrong {
+    height: 20px;
+}
+
+#right-wrong p {
+    margin-bottom: 5px!important;
+}
+
+.correct-text {
+    color: green;
+    font-weight: bold;
+}
+
+#pic-field {
+    min-height: 270px;
+}
+
+#pic-field img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+#answer-list {
+    list-style-type: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0!important;
+}
+
+.answer-item {
+    font-size: .9rem;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.answer-item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+    border: 5px solid green;
+    transition: all .2s ease-in-out;
+}
+
+.correct:hover {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+    border: 5px solid red;
+    color: white;
+    text-decoration: line-through black;
+    transition: all .2s ease-in-out;
+}
+
+.wrong:hover {
+    background-color: red;
+}
+
+
+
+/* ANIMATION FOR IMAGES AND ANSWER LISTS */
+
+.flip {
+    animation: flipIt 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.flipback {
+    animation: flipBack 1s ease-in-out 0s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+
+/* BUTTONS FOR RESULTS AND RESET */
+
+#results {
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+#results,
+#reset-game {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 12px;
+    border: 5px solid black;
+    border-radius: 8px;
+    background: #ffffff;
+    font-family: 'Cutive', serif;
+}
+
+#results:hover,
+#reset-game:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* ENDGAME */
+
+.endgame {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 1s ease-in-out 0.25s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.tally img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out 0.5s;
+    transition: all .3s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+footer p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flipIt {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes flipBack {
+    from {
+        transform: rotateY(360deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/* Reduced screen */
+
+@media screen and (max-width: 1250px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Tablet portrait */
+
+@media screen and (max-width: 798px) {
+    h1 {
+        font-size: 2.5rem!important;
+    }
+    h2 {
+        font-size: 1rem!important;
+        line-height: 2rem;
+    }
+    .smaller {
+        font-size: 2rem!important;
+    }
+}
+
+
+/* Small tablets */
+
+@media screen and (max-width: 510px) {
+    h1 {
+        font-size: 2rem!important;
+    }
+    h2 {
+        font-size: 1rem!important;
+        line-height: 1.5rem;
+    }
+    .smaller {
+        font-size: 1.5rem!important;
+    }
+    .answer-item {
+        font-size: .7rem;
+    }
+}
+
+
+/* Mobile phones */
+
+@media screen and (max-width: 385px) {
+    header img {
+        width: 50%;
+    }
+    h1 {
+        font-size: 1.5rem!important;
+    }
+    h2 {
+        font-size: .7rem!important;
+    }
+    .smaller {
+        font-size: 1rem!important;
+    }
+    .answer-item {
+        font-size: .6rem;
+        padding: 5px 10px;
+    }
+    .pic-row {
+        margin-top: 2rem!important;
+    }
+    #right-wrong p {
+        font-size: .8rem;
+    }
+}
