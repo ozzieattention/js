@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid ile Hesap Makinesi</title>
+
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0px;
+    }
+    
+    body {
+        background-image: url("images/numbers.jpg");
+    }
+    
+    .calculator {
+        max-width: 400px;
+        margin: 0px auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+    
+    .screen {
+        background-color: #2F4F4F;
+        height: 70px;
+        grid-column: 1/5;
+        padding: 5px 10px 5px 10px;
+        font-size: 3rem;
+        color: #fff;
+        box-sizing: border-box;
+        text-align: right;
+        /* direction: rtl; */
+    }
+    
+    button {
+        padding: 15px;
+        font-size: 1.25rem;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+    
+    #equals {
+        grid-column: 4/5;
+        grid-row: 3/7;
+        background-color: #F67D4F;
+    }
+    
+    button:hover {
+        background-color: #ddd;
+    }
+</style>
+
+<body>
+
+    <div class="calculator">
+        <input type=" text" id="screen" class="screen " value="0" disabled />
+        <button type="button" class="operator" value="+ ">+</button>
+        <button type="button" class="operator" value="- ">-</button>
+        <button type="button" class="operator" value="* ">&times;</button>
+        <button type="button" class="operator" value="/ ">&divide;</button>
+
+        <button type="button" value="7 " class="number">7</button>
+        <button type="button" value="8 " class="number">8</button>
+        <button type="button" value="9 " class="number">9</button>
+
+        <button type="button" value="4 " class="number">4</button>
+        <button type="button" value="5 " class="number">5</button>
+        <button type="button" value="6 " class="number">6</button>
+
+
+        <button type="button" value="1 " class="number">1</button>
+        <button type="button" value="2" class="number">2</button>
+        <button type="button" value="3 " class="number">3</button>
+
+
+        <button type="button" value="0 " class="number">0</button>
+        <button type="button" class="decimal" value=". " id="decimal">.</button>
+        <button type="button" class="all-clear " value="clear " id="clear">AC</button>
+
+        <button type="button" class="equal-sign " value="=" id="equals">=</button>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
